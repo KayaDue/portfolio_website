@@ -1,4 +1,3 @@
-<!-- is a declaration used to inform the we browser that the document is a HTML document.-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <!-- lang stands for language & dir stands for direction(left to right)-->
@@ -8,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>KP Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
 
   <body>
@@ -20,7 +26,7 @@
         /></a>
         <nav>
           <ul>
-            <li><a href="index.html">Work</a></li>
+            <li><a href="work.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -31,11 +37,13 @@
     <main>
       <!-- for the hero section-->
       <div>
-        <div>
-          <h1>Hi I'm Kaya</h1>
-          <span>A curious and driven UX/ UI designer based in Munich.</span>
+        <div id="hero_section">
+          <h1 class="main_heading">Hi I'm Kaya</h1>
+          <span class="main_span"
+            >A curious and driven UX/ UI designer based in Munich.</span
+          >
 
-          <p>
+          <p class="main_p">
             I am passionate about Human-centred designs that inspire and improve
             user experiences.
           </p>
@@ -44,19 +52,19 @@
 
       <!-- for your work/projects-->
       <div>
-        <div>
-          <h2>My projects</h2>
+        <div id="work_section">
+          <h1 class="site_heading">My projects</h1>
           <div>
             <div>
               <picture>
                 <source srcset="img/alio/01.png" media="(max-width:767px)" />
-                <img src="img/alio/01@2x.png" alt="My Image" />
+                <img class="image" src="img/alio/01@2x.png" alt="My Image" />
               </picture>
             </div>
             <div>
-              <h3>Alio</h3>
-              <p>Responsive E-commerce Web App</p>
-              <p>
+              <h3 class="secondary_heading">Alio</h3>
+              <h2 class="txt_weight">Responsive E-commerce Web App</h2>
+              <p class="p_font_size">
                 This Project was about creating a minimalistic furniture brand
                 and E-commerce Responsive Web app from scratch.
               </p>
@@ -70,13 +78,13 @@
             <div>
               <picture>
                 <source srcset="img/soulway/01.png" media="(max-width:767px)" />
-                <img src="img/soulway/01@2x.png" alt="My Image" />
+                <img class="image" src="img/soulway/01@2x.png" alt="My Image" />
               </picture>
             </div>
             <div>
-              <h3>Soulway</h3>
-              <p>Hollistic Retreat Travel App</p>
-              <p>
+              <h3 class="secondary_heading">Soulway</h3>
+              <h2 class="txt_weight">Hollistic Retreat Travel App</h2>
+              <p class="p_font_size">
                 This project was about learning deeply about UX techniques and
                 designing a Location recommendation responsive App with the
                 users involved from the beginning.
@@ -90,17 +98,23 @@
           <div>
             <div>
               <picture>
-                <source srcset="img/moonbow/00.png" media="(max-width:767px)" />
+                <source
+                  srcset="img/moonbow/Images_Moonbow_Case_study/00.png"
+                  media="(max-width:767px)"
+                />
                 <img
-                  src="img/moonbow/Images Moonbow - Case study/00@2x.png"
+                  class="image"
+                  src="img/moonbow/Images_Moonbow_Case_study/00@2x.png"
                   alt="My Image"
                 />
               </picture>
             </div>
             <div>
-              <h3>Moonbow</h3>
-              <p>a self documenting and social media app for creatives.</p>
-              <p>
+              <h3 class="secondary_heading">Moonbow</h3>
+              <h2 class="txt_weight">
+                Self documenting and social media app for creatives
+              </h2>
+              <p class="p_font_size">
                 This Project was about learning to create a native app both for
                 the iOS and Android respecting the different platform
                 guidelines.
@@ -113,8 +127,8 @@
     </main>
 
     <!-- for the footer-->
-    <footer id="contact">
-      <div>
+    <footer>
+      <div id="contact">
         <div>
           <h2>Get in Touch</h2>
           <p>
