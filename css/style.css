@@ -52,9 +52,15 @@ body {
 }
 
 a {
-  color: #31a4ae;
+  color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+.link_mail {
+  color: #31a4ae;
+  font-size: 20px;
+
 }
 
 a:hover {
@@ -66,13 +72,22 @@ ul {
 }
 
 button {
-  background-color: #ffefe4;
+  background-color: black;
   border: none;
-  color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 8px;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 4px;
   outline: none;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 button a {
@@ -80,11 +95,19 @@ button a {
 }
 
 .image {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.project_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }
 
 header {
-  background-color: #ffefe4;
+  background-color: white;
   padding: 8px;
   margin: 0px;
 }
@@ -95,14 +118,20 @@ header {
   padding: 16px;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
 .row {
   margin: 48px 0; /* 25px top and bottom, 0 left and right */
+  display: flex;
 }
 .logo {
   max-width: 250px;
 }
 header {
-  background-color: #ffe4c4;
+  background-color: white;
   text-align: center;
   padding: 0px 0px;
   -webkit-box-shadow: 0px 4px 9px 0px rgba(0, 20, 0, 0.12);
@@ -136,6 +165,8 @@ main {
 
 .about_image {
   margin: 16px;
+  max-width: 100%;
+  height: auto;
 }
 
 .skills_heading {
@@ -170,4 +201,190 @@ main {
 
 .btn {
   font-size: 17px;
+  width: 50%;
 }
+
+path.st6,
+circle.st6 {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud {
+  animation: 15s moving-clouds infinite alternate-reverse linear;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+/* TO GLEDAJ */
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+  .main_heading {
+    font-size: 48px;
+  }
+
+  .p_font_size {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+  }
+
+
+  .main_p {
+    margin-top: 38px;
+  }
+
+  .site_heading {
+    margin-top: 0;
+  }
+
+  .main_span {
+    font-size: 28px;
+  }
+
+  .txt_weight {
+    font-weight: 500;
+    padding-left: 10px;
+  }
+
+  .about_image {
+    margin-left: 0;
+  }
+
+  .about_media {
+    text-align: left;
+    padding-left: 16px;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  #hero_section {
+    padding: 0;
+  }
+
+  .flex_items {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about_contact {
+    margin-top: 88px;
+  }
+
+  .skills_heading {
+    margin-bottom: 48px;
+    text-align: left;
+    padding-left: 40px;
+  }
+  .list_heading {
+    margin-top: 40px;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .row {
+    display: block;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+.p_font_size.about_media {
+
+  margin-bottom:  48px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.txt_weight {
+  font-weight: 500;
+}
+
+.p_font_size.about_media {
+
+  margin-bottom:  48px;
+  margin-left: 240px;
+  margin-right: 240px;
+}
+
+  
+
+@keyframes color-change {
+  0% {
+    opacity: 40%;
+  }
+  20% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 40%;
+  }
+}
+
+@keyframes moving-clouds {
+  from {
+    transform: translateX(100px);
+  }
+  17% {
+    transform: translateX(120px);
+  }
+  20% {
+    transform: translateX(150px);
+  }
+  
+  40% {
+    transform: translateX(120px);
+  }
+  
+  60% {
+    transform: translateX(80px);
+  }
+  
+  100% {
+    transform: translateX(100px);
+  }
