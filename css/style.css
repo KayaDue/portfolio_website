@@ -60,7 +60,6 @@ a {
 .link_mail {
   color: #31a4ae;
   font-size: 20px;
-
 }
 
 a:hover {
@@ -228,7 +227,6 @@ Medium devices (640px and larger)
     margin-bottom: 0;
   }
 
-
   .main_p {
     margin-top: 38px;
   }
@@ -319,8 +317,7 @@ Large devices (1024px or larger)
 }
 
 .p_font_size.about_media {
-
-  margin-bottom:  48px;
+  margin-bottom: 48px;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -340,13 +337,10 @@ X-large devices (1440px or larger)
 }
 
 .p_font_size.about_media {
-
-  margin-bottom:  48px;
+  margin-bottom: 48px;
   margin-left: 240px;
   margin-right: 240px;
 }
-
-  
 
 @keyframes color-change {
   0% {
@@ -376,15 +370,16 @@ X-large devices (1440px or larger)
   20% {
     transform: translateX(150px);
   }
-  
+
   40% {
     transform: translateX(120px);
   }
-  
+
   60% {
     transform: translateX(80px);
   }
-  
+
   100% {
     transform: translateX(100px);
   }
+}
