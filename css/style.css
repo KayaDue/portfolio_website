@@ -127,7 +127,7 @@ header {
   display: flex;
 }
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 header {
   background-color: white;
@@ -211,6 +211,7 @@ circle.st6 {
 .cloud {
   animation: 15s moving-clouds infinite alternate-reverse linear;
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -291,7 +292,45 @@ Medium devices (640px and larger)
   }
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 650px) {
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    font-size: 20px;
+  }
+
+  .navtoggle,
+  .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+    font-size: 20px;
+  }
+
+  .navtoggle.responsive li {
+    display: inline-block;
+  }
+
+  .navtoggle.responsive nav {
+    height: 50px;
+  }
+  .navtoggle.responsive li {
+    display: inline-block;
+    padding: 10px 0;
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
+}
+
+@media only screen and (min-width: 651px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -302,24 +341,24 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 850px) {
   .row {
     display: block;
   }
-}
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-}
-
-.p_font_size.about_media {
-  margin-bottom: 48px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 /* ==============================
@@ -338,8 +377,7 @@ X-large devices (1440px or larger)
 
 .p_font_size.about_media {
   margin-bottom: 48px;
-  margin-left: 240px;
-  margin-right: 240px;
+  margin-right: 50px;
 }
 
 @keyframes color-change {

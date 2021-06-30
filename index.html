@@ -24,13 +24,23 @@
         <a href="index.html"
           ><img class="logo" src="img/Logo_KP_.png" alt="Kaya Pranjic"
         /></a>
-        <nav>
-          <ul>
-            <li><a href="#work_section">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div id="myNavtoggle">
+          <nav class="navtoggle">
+            <ul>
+              <li><a href="#work_section">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -6731,6 +6741,15 @@
         <p>Copyright Katica Pranjic 2021</p>
       </div>
     </footer>
-    <script src="js/scripts.js."></script>
+    <script
+      src="https://kit.fontawesome.com/e6aa32bfe8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
