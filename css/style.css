@@ -22,11 +22,16 @@ body {
 
 .main_heading {
   font-size: 80px;
+  padding-top: 100px;
 }
 
 .main_span,
 .main_p {
   font-size: 32px;
+}
+
+.p_margin {
+  margin-bottom: 70px;
 }
 
 .txt_weight {
@@ -35,8 +40,12 @@ body {
 
 .site_heading {
   font-size: 40px;
+  padding-top: 150px;
 }
 
+.heading_work {
+  padding-top: 0;
+}
 .secondary_heading {
   font-size: 36px;
 }
@@ -60,6 +69,10 @@ a {
 .link_mail {
   color: #31a4ae;
   font-size: 20px;
+}
+
+.link_color {
+  color: white;
 }
 
 a:hover {
